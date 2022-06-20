@@ -492,7 +492,7 @@ function installLogiciel
 	(
 	while test $COUNT != 100
 	do
-
+######1
 		cat <<EOF
 XXX 
 $COUNT
@@ -500,8 +500,17 @@ Installation de hardinfo
 XXX
 EOF
 	sudo apt install hardinfo -y >/dev/null 2>&1  
-	(( COUNT+=9 ))
-
+	(( COUNT+=8 ))
+######2
+		cat <<EOF
+XXX 
+$COUNT
+Installation de stress-ng
+XXX
+EOF
+	sudo apt install stress-ng -y >/dev/null 2>&1  
+	(( COUNT+=8 ))
+######3
 		cat <<EOF
 XXX 
 $COUNT
@@ -509,8 +518,8 @@ Installation de screentest
 XXX
 EOF
 	sudo apt install screentest -y >/dev/null 2>&1  
-	(( COUNT+=9 ))
-
+	(( COUNT+=8 ))
+######4
 		cat <<EOF
 XXX 
 $COUNT
@@ -518,8 +527,8 @@ Installation d'inxi
 XXX
 EOF
 	sudo apt install inxi -y >/dev/null 2>&1  
-	(( COUNT+=9 ))
-
+	(( COUNT+=8 ))
+######5
 		cat <<EOF
 XXX 
 $COUNT
@@ -527,17 +536,17 @@ Installation d'acpi
 XXX
 EOF
 	sudo apt install acpi -y >/dev/null 2>&1  
-	(( COUNT+=9 ))
-
+	(( COUNT+=8 ))
+######6
 		cat <<EOF
 XXX 
 $COUNT
 Installation de libatasmart-bin
 XXX
 EOF
-	sudo apt install libatasart-bin -y >/dev/null 2>&1  
-	(( COUNT+=9 ))
-
+	sudo apt install libatasmart-bin -y >/dev/null 2>&1  
+	(( COUNT+=8 ))
+######7
 		cat <<EOF
 XXX 
 $COUNT
@@ -545,8 +554,8 @@ Installation de smartmontools
 XXX
 EOF
 	sudo apt install smartmontools -y >/dev/null 2>&1  
-	(( COUNT+=9 ))
-
+	(( COUNT+=8 ))
+######8
 		cat <<EOF
 XXX 
 $COUNT
@@ -554,8 +563,8 @@ Installation de mplayer
 XXX
 EOF
 	sudo apt install mlayer -y >/dev/null 2>&1  
-	(( COUNT+=9 ))
-
+	(( COUNT+=8 ))
+######9
 		cat <<EOF
 XXX 
 $COUNT
@@ -563,8 +572,8 @@ Installation d'alsautils
 XXX
 EOF
 	sudo apt install alsautils -y >/dev/null 2>&1  
-	(( COUNT+=9 ))
-
+	(( COUNT+=8 ))
+######10
 		cat <<EOF
 XXX 
 $COUNT
@@ -572,8 +581,8 @@ Installation de cheese
 XXX
 EOF
 	sudo apt install cheese -y >/dev/null 2>&1  
-	(( COUNT+=9 ))
-
+	(( COUNT+=8 ))
+######11
 		cat <<EOF
 XXX 
 $COUNT
@@ -581,8 +590,8 @@ Installation d'x-www-browser
 XXX
 EOF
 	sudo apt install x-www-brower -y >/dev/null 2>&1  
-	(( COUNT+=9 ))
-
+	(( COUNT+=8 ))
+######12
 		cat <<EOF
 XXX 
 $COUNT
@@ -590,7 +599,7 @@ Installation de curl
 XXX
 EOF
 	sudo apt install curl -y >/dev/null 2>&1  
-	(( COUNT+=10 ))
+	(( COUNT+=12 ))
 
 	done
 	) |
